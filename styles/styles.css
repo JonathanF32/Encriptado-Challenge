@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;  
+    background-color: #F3F5FC;
+}
+
+.logo{
+    display: flex;
+    position: absolute;
+    left: 13%;
+    width: 120px;    
+    height: 48px;
+    
+}
+.container{    
+    display: flex; 
+    justify-content: space-between;  
+    width: 100vw;
+                
+}
+.container_texto{
+    width: 42%;
+    height: 60%;
+    background-color: transparent;   
+    color: #0a3871;
+    margin: 10% 0 0 24%;
+    font-family: "Inter", sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    border: none;   
+} 
+
+.container_texto:focus,
+.container_texto:active{
+    border: none;
+    outline: none;
+}
+
+
+::placeholder{
+    font-family: "Inter", sans-serif;
+    color: #0a3871;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.container_imagen{    
+    width: 17%;
+    height: 850px;
+    background-color: white;
+    margin: -40px 40px 0 0;
+    border-radius: 32px;      
+    box-shadow: 0 1px 5px 0;
+     
+}
+.imagen{
+    display: flex;
+    width: 80%;
+    height: 35%;    
+    position: relative;
+    top: 15%;
+    left: 10%;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.imagen_texto{        
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: absolute;
+    top: 50%;
+    width: 17%;
+          
+}
+
+#titulo_2{
+    color: #343A40;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    justify-content: center;
+    text-align: center;
+}
+#parrafo{
+    color: #495057;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 1rem;
+
+}
+
+.parrafo2{
+    color: #495057;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 1rem;
+}
+.container_botones{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    gap: 50px;
+    bottom: 150px;
+    right: 50px;
+    
+    
+}
+.boton_encriptar{     
+    color: white;
+    width: 18%;
+    height: 67px;
+    border: 1px solid black;  
+    background-color: #0a3871;
+    border-radius: 24px;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;           
+}
+.boton_encriptar:hover{
+    border: 2px solid black;
+    color: white;
+    background-color: #0a3871;
+    width: 17%;
+    height: 67px;
+    text-transform: uppercase;
+
+}
+.boton_desencriptar{
+    color: #0a3871;
+    width: 18%;
+    height: 67px;
+    border: 1px solid #0a3871;  
+    background-color: #D8DFE8;
+    border-radius: 24px;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+}
+.boton_desencriptar:hover{
+    color: #0a3871;
+    background-color: #D8DFE8;
+    border: 2px solid black;
+    width: 17%;
+    height: 67px;
+    text-transform: uppercase;
+}
+.condiciones{
+    display: flex;
+    flex-direction: row;    
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    position: absolute;
+    width: 30%;
+    left: 28%;
+    top: 65%
+}
+
+.imagen_2{
+    width: 16px;
+    height: 16px;
+}
+
+@media (max-width: 950px){ 
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .container_imagen{
+        width: 100%;
+        height: 15%;
+                
+     }
+     .imagen{
+        display: none;
+        visibility: hidden;
+        top: 0;
+     }
+    .imagen_texto{
+        position: absolute;
+        width: 80%;
+        bottom: 0;
+        left: 10%;
+    }    
+    
+    .container_texto{
+        width: 60%;
+        height: 1%;
+        top: 1%;
+        margin-top: 20%;      
+
+    }
+    
+    
+    .logo{
+        margin-left: 0;
+        position: absolute;
+        left: 0%;
+    }
+
+    .container_botones{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: 3%;
+        position: absolute;
+        bottom: 40%;
+        
+        
+    }
+
+    .boton_desencriptar{
+       
+        width: 33%;
+              
+    }
+    .boton_encriptar{
+        width: 30%;
+
+    }
+    .condiciones{
+        width: 50%;
+        position: absolute;
+        left: 20%;
+        top: 40%;
+       
+       
+    }
+}

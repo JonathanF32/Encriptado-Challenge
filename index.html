@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Encriptado de texto</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>        
+      <header>
+         <img class="logo" src="img/Logo.png" alt="Imagen del logo letra A">
+      </header>
+    <div class="container">
+        <textarea  class="container_texto" name="texto" id="texto" cols="30" rows="5" placeholder="Ingrese el texto aqui"></textarea>          
+            <div class="container_imagen">
+                <img class="imagen" src="img/Muñeco.png" alt="imagen de un muñeco sosteniendo una lupa">                
+                <div class="imagen_texto">
+                    <h2 id="titulo_2">Ningun mensaje fue encontrado</h2>
+                    <p id="parrafo">Ingresa el texto que desees encriptar o desencriptar.</p>                                 
+                    
+                </div>                
+            </div>               
+     </div>   
+     <div class="condiciones">
+        <img src="img/Vector.png" alt="signo de exclamacion" class="imagen_2">
+        <p class="parrafo2">Solo letras minusculos y sin acentos</p>
+     </div> 
+     <div class="container_botones">
+        
+        <button class="boton_encriptar" type="button" onclick="encriptar();">Encriptar</button>
+        <button class="boton_desencriptar" type="button" onclick="desencriptar();">Desencriptar</button>
+    </div>       
+     <script src="app.js"></script>
+</html>
+
+
+ 
+
+
